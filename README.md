@@ -2,20 +2,20 @@
 
 This bot keeps one live dashboard message updated in Discord and sends a one-time alert when an approved MindLab member goes live on Twitch.
 
-## What your friend needs to do
+## What needs to be done
 
-She only needs to do four things:
+Only four things are required:
 
 1. Create the Discord bot.
 2. Create the Twitch app.
 3. Fill in the values in `.env`.
 4. Deploy the repo to Railway.
 
-After that, she runs one Discord command to finish setup.
+After that, run one Discord command to finish setup.
 
 ## Fast setup checklist
 
-Before starting, she should have:
+Before starting, have:
 
 - A Discord server where she has admin rights.
 - A Twitch account with access to the developer console.
@@ -25,7 +25,7 @@ Before starting, she should have:
 ## Step 1: Put this project on GitHub
 
 1. Upload this repo to a new GitHub repository.
-2. Keep the repo private if she does not want anyone else seeing the code.
+2. Keep the repo private if the code should not be publicly visible.
 3. Do not commit the real `.env` file.
 
 ## Step 2: Create the Discord bot
@@ -80,7 +80,7 @@ Use the Discord OAuth URL generator or build an invite link with these scopes an
 1. Copy `.env.example` to `.env`.
 2. Fill in every blank value.
 3. Leave `PORT=3000` unless Railway says otherwise.
-4. Leave `REFRESH_INTERVAL_SECONDS=90` unless she wants faster or slower updates.
+4. Leave `REFRESH_INTERVAL_SECONDS=90` unless faster or slower updates are preferred.
 5. Leave `DEFAULT_ALERT_EVERYONE=true` if alerts should ping everyone by default.
 
 ### Example `.env`
@@ -139,7 +139,7 @@ That command creates the live dashboard message.
 
 ## Moderator commands
 
-These are the only commands your friend really needs day to day:
+These are the main commands needed day to day:
 
 - `/streamer-add` to manually add a streamer
 - `/streamer-approve` to approve a self-submitted claim
@@ -200,6 +200,6 @@ These are the only commands your friend really needs day to day:
 
 ## Recommended handoff note
 
-If you are handing this to a non-coder, tell them this:
+For a simple handoff, use this note:
 
 "Fill in the environment values, deploy it to Railway, run `/autolive-setup`, and then use the slash commands to approve or remove streamers."
