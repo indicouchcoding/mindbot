@@ -1,0 +1,21 @@
+{
+  "name": "mindlab-autolive-bot",
+  "version": "1.0.0",
+  "description": "Discord auto-live board and Twitch alert bot for MindLab.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js",
+    "validate:env": "node scripts/validate-env.js"
+  },
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
